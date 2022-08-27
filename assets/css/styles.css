@@ -1,3 +1,22 @@
+/* ESTILOS GENERALES */
+
+/*Google Fonts Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'Poppins', sans-serif;*/
+
+/*Google Fonts Monserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'Montserrat', sans-serif;*/
+
+
+/* COLORES */
+:root{
+  --green-color-primary: #4abf2a;
+  --grey-text: #999999;
+  --background-color: #FAF3E8;
+  --background-btn-primary: #004036;
+}
+
 .container {
   padding-top: 20px;
 }
