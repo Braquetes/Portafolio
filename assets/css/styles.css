@@ -6,6 +6,15 @@ nav {
   height: 50px;
 }
 
+a:hover {
+  background-color: transparent !important;
+  color: #4ABF2A !important;
+}
+
+.card {
+  border-color: transparent !important;
+}
+
 .titulo {
   display: flex;
   justify-content: center;
@@ -41,7 +50,7 @@ nav {
 }
 
 .t {
-  color: #57bba0 !important;
+  color: #1da728 !important;
 }
 
 .navbar-toggler-icon {
@@ -58,3 +67,21 @@ nav {
 .bgitems {
   background-color: #d5f6cc !important;
 }
+
+.grafico {
+  position: relative; /* IE is dumb */
+  border: 1px solid #17483e;
+  padding: 2px;
+  }
+  .grafico .barra {
+  display: block;
+  position: relative;
+  background: #17483e;
+  text-align: center;
+  color: #fff;
+  height: 2em;
+  line-height: 2em;
+  }
+  .grafico .barra span {
+  position: absolute; left: 1em;
+  }
