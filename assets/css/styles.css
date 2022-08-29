@@ -73,6 +73,7 @@ a:hover {
   border: 1px solid #17483e;
   padding: 2px;
   }
+
   .grafico .barra {
   display: block;
   position: relative;
@@ -82,6 +83,7 @@ a:hover {
   height: 2em;
   line-height: 2em;
   }
+  
   .grafico .barra span {
   position: absolute; left: 1em;
   }
