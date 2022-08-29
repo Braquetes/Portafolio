@@ -4,8 +4,7 @@
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
-:root {
+/* :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -26,35 +25,41 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-dark: #212529; */
+/*   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-}
-
-*,
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); */
+  /* COLORES PERSONALIZADOS */
+/*   --green-color-primary: #0000000;
+  --grey-text: #999999;
+  --green-navlink: #1C4F44;
+  --background-color: #FAF3E8;
+  --background-btn-primary: #004036; */
+/* }
+ */
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
+ */
+/* @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
-}
+} */
 
-body {
+/* body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+} */
 
 hr {
   margin: 1rem 0;
@@ -67,7 +72,7 @@ hr {
 hr:not([size]) {
   height: 1px;
 }
-
+/* 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -123,7 +128,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
+ */
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -138,7 +143,7 @@ address {
   font-style: normal;
   line-height: inherit;
 }
-
+/* 
 ol,
 ul {
   padding-left: 2rem;
@@ -157,7 +162,7 @@ ol ul,
 ul ol {
   margin-bottom: 0;
 }
-
+ */
 dt {
   font-weight: 700;
 }
@@ -201,7 +206,7 @@ sup {
   top: -0.5em;
 }
 
-a {
+/* a {
   color: #0d6efd;
   text-decoration: underline;
 }
@@ -212,7 +217,7 @@ a:hover {
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 pre,
 code,
@@ -2410,9 +2415,9 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  -appearance: none;
+/*   -webkit-print-color-adjust: exact;
+ */  -color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -3832,7 +3837,7 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
+/* ESTILOS BARRA DE NAVEGACIÓN */
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -3843,8 +3848,9 @@ textarea.form-control-lg {
 
 .nav-link {
   display: block;
+  font-weight: 700;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: var(--green-navlink);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4176,15 +4182,16 @@ textarea.form-control-lg {
 .navbar-expand .navbar-toggler {
   display: none;
 }
-
+/* ESTILOS DE TEXTOS BARRA DE NAVEGACIÓN */
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  font-weight: 800;
+  color: var(--green-navlink);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: var(--green-navlink);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(0, 0, 0, 0.7);
@@ -4197,6 +4204,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-toggler {
+  background-color: var(--green-navlink);
   color: rgba(0, 0, 0, 0.55);
   border-color: rgba(0, 0, 0, 0.1);
 }
@@ -7389,7 +7397,10 @@ textarea.form-control-lg {
 .text-reset {
   color: inherit !important;
 }
-
+/* BACKGROUND COLORS */
+.bg-navbar{
+  background-color: #D5F5CC !important;
+}
 .bg-primary {
   background-color: #0d6efd !important;
 }
