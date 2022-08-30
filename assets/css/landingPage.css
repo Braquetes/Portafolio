@@ -5,17 +5,29 @@
     --green-secondary: #76B536;
     --gren-light: #E9F3ED;
     --green-dark: #00210B;
-    --white-color: #FFFFFF;
-    --black-color: #000000;
+    /* PALETA DE COLORES 2OP */
+    --green-primary2:#2D8D79;
+    --green-secondary2: #8FC79A;
+    --green-dark2: #5E9387;
+    --green-light2: #CEE9B6;
+    /* PALETA DE COLORES ARCADIA */
+    --green-blue-arcadia: #A7F2E4;
+    --green-color-text:#01261C;
+    --green-color-hover-link: #4ABF2A;
+    --green-lemon-arcadia: #98D936;
+    --green-coffe-light-arcadia: #F2ECE4;
+    /* PALETA COLORES COMPLEMENTARIOS */
     --green-color-primary: #D5F5CC;
     --green-bg1-btn: #004036;
     --green-bg2-btn: #11FF84;
-    --grey-color-text: #999999;
-    --grey-text-muted: #acacac;
-    --green-color-text:#01261C;
+    /* PALETA DE GRISES */
     --grey-border-btnsocial: #e9ecef;
     --grey-color-btnsocial: #666;
-    --green-color-hover-link: #4ABF2A;
+    --grey-color-text: #999999;
+    --grey-text-muted: #acacac;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    /* COLORES ICONOS REDES */
     --orange-color: #fa4529;
     --color-logo-twwitter: #1DA1F2;
     --color-logo-face:#4867AA;
@@ -28,10 +40,14 @@
 *{
   font-family: 'Montserrat', sans-serif;
 }
+/* ESTIOS BG HEADER */
+.bg-header{
+  background-color: var(--gren-light);
+}
 /* ESTILOS DE TEXTOS */
 .nameDev{
-  font-weight: 600;
-  color: var(--green-bg1-btn);
+  font-weight: 700;
+  color: var(--green-primary);
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
 
@@ -81,11 +97,7 @@ a{
 
 .profilePic{
   border-radius: 10%;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
+  
 }
 /*ESTILOS BOTONES*/
 .btn-social{
@@ -97,9 +109,9 @@ a{
   height: 2.5rem;
   line-height: 1;
   margin: 21px;
-  border: solid 1px var(--grey-border-btnsocial);
+  border: solid 1px var(--green-primary);
   border-radius: 50% ;
-  color: var(--grey-color-btnsocial);
+  color: var(--green-primary);
 }
 .btn-tw:hover, .btn-tw:focus{
   background-color: var(--color-logo-twwitter);
