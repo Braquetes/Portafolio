@@ -6,26 +6,105 @@
     --green-bg1-btn: #004036;
     --green-bg2-btn: #11FF84;
     --grey-color-text: #999999;
-    --green-color-text:#024136;
+    --grey-text-muted: #acacac;
+    --green-color-text:#01261C;
     --grey-border-btnsocial: #e9ecef;
     --grey-color-btnsocial: #666;
     --green-color-hover-link: #4ABF2A;
     --orange-color: #fa4529;
+    --color-logo-twwitter: #1DA1F2;
+    --color-logo-face:#4867AA;
+    --color-logo-ig: #F70182;
+    --color-logo-github: #000;
+    --color-logo-gitlab: #DB4128;
+    
 }
 /*  */
 *{
   font-family: 'Montserrat', sans-serif;
 }
+/* ESTILOS DE TEXTOS */
+.nameDev{
+  font-weight: 600;
+  color: var(--green-color-text);
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+.latname{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+}
+ .titleMute{
+  color: var(--grey-text-muted);
+  text-align: left;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  line-height: 2;
+}
+.text-mute{
+  color: var(--green-color-text);
+   font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  line-height: 2; 
+}
+.title4{
+  color: var(--green-color-text);
+  font-weight: 700;
+}
+.iconCert{
+  color: var(--color-logo-gitlab);
+}
+/* ESTILOS FOTO BRAQUETES */
+
+.profilePic{
+  border-radius: 10%;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
 /*ESTILOS BOTONES*/
 .btn-social{
   font-size: 1rem;
+  align-items: center;
+  text-align: center;
   width: 2.5rem;
+  padding: 10px;
   height: 2.5rem;
   line-height: 1;
   margin: 21px;
   border: solid 1px var(--grey-border-btnsocial);
   border-radius: 50% ;
   color: var(--grey-color-btnsocial);
+}
+.btn-tw:hover, .btn-tw:focus{
+  background-color: var(--color-logo-twwitter);
+  color: var(--white-color);
+  border: solid 1px #1DA1F2;
+}
+.btn-fa:hover, .btn-fa:focus{
+  background-color: var(--color-logo-face);
+  color: var(--white-color);
+}
+.btn-ig:hover, .btn-ig:focus{
+  background-color: var(--color-logo-ig);
+  color: var(--white-color);
+}
+.btn-gh:hover, .btn-gh:focus{
+  background-color: var(--color-logo-github);
+  color: var(--white-color);
+}
+.btn-gl:hover, .btn-gl:focus{
+  background-color: var(--color-logo-gitlab);
+  color: var(--white-color);
 }
 .button{
   font-weight: 700;
@@ -62,11 +141,7 @@
   text-decoration: underline 2px var(--orange-color);
 
 }
-/*ESTILOS TEXTOS*/
-.name{
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-}
+
 /* ESTILOS LINKS NAVBAR */
 .navbar{
     text-transform: uppercase;
@@ -156,4 +231,15 @@
 }
 .nav-link:active{
     color: var(--green-color-hover-link);
+}
+/* ESTILOS SECCIÓN DE CERTIFICACIONES */
+.sectionCert{
+  cursor: pointer;
+  border-top: solid 2px var(--black-color);
+  border-bottom: solid 2px var(--black-color);
+  content-visibility: hidden;
+}
+.sectionCert:hover{
+  visibility: visible;
+  background-color: var(--grey-border-btnsocial);
 }
