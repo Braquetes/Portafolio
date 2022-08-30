@@ -1,5 +1,10 @@
 /* ESTILOS GENERALES */
 :root{
+  /* Paleta de Verdes */
+    --green-primary:#416D50;
+    --green-secondary: #76B536;
+    --gren-light: #E9F3ED;
+    --green-dark: #00210B;
     --white-color: #FFFFFF;
     --black-color: #000000;
     --green-color-primary: #D5F5CC;
@@ -26,7 +31,7 @@
 /* ESTILOS DE TEXTOS */
 .nameDev{
   font-weight: 600;
-  color: var(--green-color-text);
+  color: var(--green-bg1-btn);
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
 
@@ -164,12 +169,16 @@ a{
     text-transform: uppercase;
 }
 .navbar-brand{
-    color: var(--green-color-text);
+    color: var(--gren-light);
     font-weight: 600;
     font-size: 1.2rem;
 }
+.navbar-brand:hover{
+  cursor: pointer;
+  color: var(--gren-light);
+}
 .bg-navbar{
-    background-color: var(--green-color-primary);
+    background-color: var(--green-primary);
 }
 .navbar-toggler{
     font-weight: 400;
@@ -177,26 +186,29 @@ a{
     background-color: var(--green-bg1-btn);
     color: var(--white-color);
 }
+.navbar-toggler:active{
+  border: none;
+  outline: none;
+}
 .btn-close {
     box-sizing: content-box;
     width: 1em;
     height: 1em;
     margin:0.25em;
     padding: 0.25em 0.25em;
-    color: rgb(194, 0, 0);
+    color: var(--gren-light);
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
     border: 0;
     border-radius: 0.15rem;
     opacity: 0.5;
   }
   .btn-close:hover {
-    color: rgb(194, 0, 0);
+    color: var(--gren-light);
     text-decoration: none;
     opacity: 0.75;
   }
   .btn-close:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
     opacity: 1;
   }
   .btn-close:disabled, .btn-close.disabled {
@@ -232,16 +244,18 @@ a{
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: var(--green-color-text);
+    color: var(--gren-light);
     font-weight: 700;
     letter-spacing: 4px;
-    font-size: 1.375rem;
-    line-height: 1.1;
+    font-size: 1.075rem;
+    line-height: 1;
+    text-underline-offset: 10px;
+    margin: .5rem 2rem;
     padding: 1.2rem .8rem;
 }
 .nav-link:hover, .nav-link:focus{
-    color: var(--green-color-hover-link);
-    text-decoration: underline 3px var(--green-color-hover-link);
+    color: var(--gren-light);
+    text-decoration: underline  3px var(--green-color-hover-link);
 }
 .nav-link:focus + .nav-link, .nav-link:focus{
     color: var(--green-color-hover-link);
@@ -257,4 +271,8 @@ a{
 }
 .sectionCert:hover  {
   background-color: var(--grey-border-btnsocial);
+}
+/* ESTILOS FOOTER */
+footer{
+  background-color: var(--green-bg1-btn);
 }
