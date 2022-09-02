@@ -1,31 +1,141 @@
 /* ESTILOS GENERALES */
 :root{
-    --white-color: #FFFFFF;
-    --black-color: #000000;
+  /* Paleta de Verdes */
+    --green-primary:#416D50;
+    --green-secondary: #76B536;
+    --gren-light: #E9F3ED;
+    --green-dark: #00210B;
+    /* PALETA DE COLORES 2OP */
+    --green-primary2:#2D8D79;
+    --green-secondary2: #8FC79A;
+    --green-dark2: #5E9387;
+    --green-light2: #CEE9B6;
+    /* PALETA DE COLORES ARCADIA */
+    --green-blue-arcadia: #A7F2E4;
+    --green-color-text:#01261C;
+    --green-color-hover-link: #4ABF2A;
+    --green-lemon-arcadia: #98D936;
+    --green-coffe-light-arcadia: #F2ECE4;
+    /* PALETA COLORES COMPLEMENTARIOS */
     --green-color-primary: #D5F5CC;
     --green-bg1-btn: #004036;
     --green-bg2-btn: #11FF84;
-    --grey-color-text: #999999;
-    --green-color-text:#024136;
+    /* PALETA DE GRISES */
     --grey-border-btnsocial: #e9ecef;
     --grey-color-btnsocial: #666;
-    --green-color-hover-link: #4ABF2A;
+    --grey-color-text: #999999;
+    --grey-text-muted: #acacac;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    /* COLORES ICONOS REDES */
     --orange-color: #fa4529;
+    --color-logo-twwitter: #1DA1F2;
+    --color-logo-face:#4867AA;
+    --color-logo-ig: #F70182;
+    --color-logo-github: #000;
+    --color-logo-gitlab: #DB4128;
+    
 }
 /*  */
 *{
   font-family: 'Montserrat', sans-serif;
 }
+/* ESTIOS BG HEADER */
+.bg-header{
+  background-color: var(--gren-light);
+}
+/* ESTILOS DE TEXTOS */
+.nameDev{
+  font-weight: 700;
+  color: var(--green-primary);
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+.latname{
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-family: 'Poppins', sans-serif;
+}
+ .titleMute{
+  color: var(--grey-text-muted);
+  text-align: left;
+  font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  line-height: 2;
+}
+.text-mute{
+  color: var(--green-color-text);
+   font-size: .9em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 500;
+  line-height: 2; 
+}
+.title4{
+  color: var(--green-primary2);
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.iconCert{
+  color: var(--color-logo-gitlab);
+}
+a{
+  text-decoration: none;
+  color: var(--black-color);
+}
+.sectionCert .title5:hover{
+  text-decoration: underline 1px var(--orange-color);
+  color: var(--color-logo-gitlab);
+}
+.text-orange{
+  color: var(--green-color-hover-link)
+}
+/* ESTILOS FOTO BRAQUETES */
+
+.profilePic{
+  border-radius: 10%;
+  
+}
 /*ESTILOS BOTONES*/
 .btn-social{
   font-size: 1rem;
+  align-items: center;
+  text-align: center;
   width: 2.5rem;
+  padding: 10px;
   height: 2.5rem;
   line-height: 1;
   margin: 21px;
-  border: solid 1px var(--grey-border-btnsocial);
+  border: solid 1px var(--green-primary);
   border-radius: 50% ;
-  color: var(--grey-color-btnsocial);
+  color: var(--green-primary);
+}
+.btn-tw:hover, .btn-tw:focus{
+  background-color: var(--color-logo-twwitter);
+  color: var(--white-color);
+  border: solid 1px #1DA1F2;
+}
+.btn-fa:hover, .btn-fa:focus{
+  background-color: var(--color-logo-face);
+  color: var(--white-color);
+}
+.btn-ig:hover, .btn-ig:focus{
+  background-color: var(--color-logo-ig);
+  color: var(--white-color);
+}
+.btn-gh:hover, .btn-gh:focus{
+  background-color: var(--color-logo-github);
+  color: var(--white-color);
+}
+.btn-gl:hover, .btn-gl:focus{
+  background-color: var(--color-logo-gitlab);
+  color: var(--white-color);
 }
 .button{
   font-weight: 700;
@@ -62,22 +172,38 @@
   text-decoration: underline 2px var(--orange-color);
 
 }
-/*ESTILOS TEXTOS*/
-.name{
+.text-link{
+  color: var(--green-primary2);
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+
+}
+.text-link:hover{
+  text-decoration: underline;
+  color: var(--green-bg1-btn);
+
+}
+.link-contact{
+  margin: 15px 0;
+}
+.link-contact:hover{
+  font-weight: 600;
+  color: var(--color-logo-gitlab);
 }
 /* ESTILOS LINKS NAVBAR */
 .navbar{
     text-transform: uppercase;
 }
 .navbar-brand{
-    color: var(--green-color-text);
+    color: var(--gren-light);
     font-weight: 600;
     font-size: 1.2rem;
 }
+.navbar-brand:hover{
+  cursor: pointer;
+  color: var(--gren-light);
+}
 .bg-navbar{
-    background-color: var(--green-color-primary);
+    background-color: var(--green-primary);
 }
 .navbar-toggler{
     font-weight: 400;
@@ -85,26 +211,29 @@
     background-color: var(--green-bg1-btn);
     color: var(--white-color);
 }
+.navbar-toggler:active{
+  border: none;
+  outline: none;
+}
 .btn-close {
     box-sizing: content-box;
     width: 1em;
     height: 1em;
     margin:0.25em;
     padding: 0.25em 0.25em;
-    color: rgb(194, 0, 0);
+    color: var(--gren-light);
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
     border: 0;
     border-radius: 0.15rem;
     opacity: 0.5;
   }
   .btn-close:hover {
-    color: rgb(194, 0, 0);
+    color: var(--gren-light);
     text-decoration: none;
     opacity: 0.75;
   }
   .btn-close:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
     opacity: 1;
   }
   .btn-close:disabled, .btn-close.disabled {
@@ -140,20 +269,70 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    color: var(--green-color-text);
+    color: var(--gren-light);
     font-weight: 700;
     letter-spacing: 4px;
-    font-size: 1.375rem;
-    line-height: 1.1;
+    font-size: 1.075rem;
+    line-height: 1;
+    text-underline-offset: 10px;
+    margin: .5rem 2rem;
     padding: 1.2rem .8rem;
 }
 .nav-link:hover, .nav-link:focus{
-    color: var(--green-color-hover-link);
-    text-decoration: underline 3px var(--green-color-hover-link);
+    color: var(--gren-light);
+    text-decoration: underline  3px var(--green-color-hover-link);
 }
 .nav-link:focus + .nav-link, .nav-link:focus{
     color: var(--green-color-hover-link);
 }
 .nav-link:active{
     color: var(--green-color-hover-link);
+}
+/* ESTILOS SECCIÓN DE CERTIFICACIONES */
+.sectionCert{
+  cursor: pointer;
+  border-top: solid 2px var(--black-color);
+  border-bottom: solid 2px var(--black-color);
+}
+.sectionCert:hover  {
+  background-color: var(--grey-border-btnsocial);
+}
+/* ESTILOS CARDS DE SKILLS */
+.card-skill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 14rem;
+  height: 14rem;
+  text-transform: uppercase;
+  color: var(--grey-color-text);
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  filter: grayscale(5);
+}
+.card-skill>span{
+  font-weight: 700;
+  line-height: 1.3;
+  padding-top: 15px;
+
+
+}
+.card-skill>img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  vertical-align: middle;
+}
+.card-skill:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  filter: drop-shadow( 14px 10px 10px  #2f93f03d);
+  color: var(--color-logo-github);
+  background-color: #2f92f03d ;
+}
+/* ESTILOS FOOTER */
+footer{
+  background-color: var(--green-bg1-btn);
 }
