@@ -55,7 +55,8 @@
 }
 .latname{
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-weight: 500;
+  font-size: 1.4em;
   font-family: 'Poppins', sans-serif;
 }
  .titleMute{
@@ -111,7 +112,7 @@ a{
   padding: 10px;
   height: 2.5rem;
   line-height: 1;
-  margin: 21px;
+  margin: .5rem;
   border: solid 1px var(--green-primary);
   border-radius: 50% ;
   color: var(--green-primary);
@@ -303,8 +304,8 @@ a{
   align-items: center;
   justify-content: center;
   border: none;
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   text-transform: uppercase;
   color: var(--grey-color-text);
   border-radius: 5px;
