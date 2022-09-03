@@ -1,4 +1,5 @@
 /* ESTILOS GENERALES */
+
 :root{
   /* Paleta de Verdes */
     --green-primary:#416D50;
@@ -36,13 +37,23 @@
     --color-logo-gitlab: #DB4128;
     
 }
+
 /*  */
 *{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
+
 }
+
 /* ESTIOS BG HEADER */
 .bg-header{
   background-color: var(--gren-light);
+}
+.bg-intro{
+  background-image: url("/assets/img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:  center;
+  color: white;
 }
 /* ESTILOS DE TEXTOS */
 .nameDev{
@@ -89,6 +100,86 @@
 a{
   text-decoration: none;
   color: var(--black-color);
+}
+.certificaciones h2{
+  font-weight: 700;
+  color: var(--green-primary2);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.certi_title span{
+  text-transform: uppercase;
+  font-size: .8em;
+  color: var(--grey-color-text);
+  font-weight: 500;
+}
+.certi_title h6{
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--green-color-text);
+}
+.certi_title h6:hover,
+.certi_title h6:focus{
+  color: var(--green-primary2);
+  cursor: pointer;
+}
+ .divider{
+  color: red;
+  background-color: red;
+  height: 4px;
+  width: 100%;
+  
+}
+/* CARDATA */
+.dataImp{
+  width: 85%;
+  border-top: 1px solid black;
+}
+.dataImp .col-8{
+  font-weight: 700;
+  font-size: .8em;
+  text-transform: uppercase;
+  text-align: left;
+}
+.dataImp .col-4{
+  font-weight: 800;
+  font-size: 4em;
+}
+/* DATOS DE CONTACTO */
+/* ul {
+  width: 100%;
+  text-align: left;
+  padding:  0rem;
+  list-style: none;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  line-height: 2;
+  margin:  0;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: .2px inset var(--grey-text-muted);
+
+}
+ul li{
+  margin: 2rem 0;
+  color: var(--grey-color-text);
+
+}
+ul li i{
+  color: var(--grey-text-muted);
+  padding: .5rem ;
+  margin-right: 20px;
+  border-right: .6px solid var(--grey-text-muted);
+}
+ul  li:hover i {
+  margin-left: 20px;
+  color: var(--green-primary2);
+} */
+.cardData{
+  border: 1px solid transparent;
+}
+.cardData:hover{
+  border: 1px solid var(--green-primary2);
 }
 .sectionCert .title5:hover{
   text-decoration: underline 1px var(--orange-color);

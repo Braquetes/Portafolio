@@ -1,0 +1,100 @@
+:root{
+    /* Paleta de Verdes */
+      --green-primary:#416D50;
+      --green-secondary: #76B536;
+      --gren-light: #E9F3ED;
+      --green-dark: #00210B;
+      /* PALETA DE COLORES 2OP */
+      --green-primary2:#2D8D79;
+      --green-secondary2: #8FC79A;
+      --green-dark2: #5E9387;
+      --green-light2: #CEE9B6;
+      /* PALETA DE COLORES ARCADIA */
+      --green-blue-arcadia: #A7F2E4;
+      --green-color-text:#01261C;
+      --green-color-hover-link: #4ABF2A;
+      --green-lemon-arcadia: #98D936;
+      --green-coffe-light-arcadia: #F2ECE4;
+      /* PALETA COLORES COMPLEMENTARIOS */
+      --green-color-primary: #D5F5CC;
+      --green-bg1-btn: #004036;
+      --green-bg2-btn: #11FF84;
+      /* PALETA DE GRISES */
+      --grey-border-btnsocial: #e9ecef;
+      --grey-color-btnsocial: #666;
+      --grey-color-text: #999999;
+      --grey-text-muted: #acacac;
+      --white-color: #FFFFFF;
+      --black-color: #000000;
+      /* COLORES ICONOS REDES */
+      --orange-color: #fa4529;
+      --color-logo-twwitter: #1DA1F2;
+      --color-logo-face:#4867AA;
+      --color-logo-ig: #F70182;
+      --color-logo-github: #000;
+      --color-logo-gitlab: #DB4128;
+      
+  }
+  *{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .bg-intro{
+    background-image: url("/assets/img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center  center;
+    color: white;
+  }
+  .portData h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 10px;
+  }
+  .portData h1 span{
+    color: var(--green-bg2-btn);
+  }
+  .infoPort{
+    font-weight: 600;
+    letter-spacing: 12px;
+    font-size: .8rem;
+    text-transform: uppercase;
+  }
+  .infoPort .carreer{
+    color: var(--green-bg2-btn);
+  }
+  .buttonPrimary{
+    background-color: var(--green-bg2-btn);
+    padding: 1.5rem 1.8rem;
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--black-color);
+    margin: 0 1rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .buttonPrimary:hover {
+    background-color: #0ebe63;
+    color: var(--green-color-text);
+
+  }
+  .buttonSecondary{
+    background-color: var(--color-logo-github);
+    padding: 1.5rem 1.8rem;
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--white-color);
+    margin: 0 1rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonSecondary:hover{
+    color: var(--green-bg2-btn);
+  }

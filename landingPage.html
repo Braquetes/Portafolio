@@ -20,15 +20,19 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <!-- LINK ICONOS FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/d2de2bc124.js" crossorigin="anonymous"></script>
+  <!-- FONTS RUBIK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
   <!-- BARRA DE NAVEGACIÓN SUPERIOR / LATERAL -->
-  <header class="position-sticky fixed-top " >
+  <header class="  position-sticky  fixed-top " >
     <nav class="navbar navbar-expand-lg bg-navbar     ">
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <h5 class="navbar-brand mx-auto " href="#">
           <img src="./assets/img/logo_small_icon_only.png" alt="" width="30" height="24"
             class="d-inline-block align-text-top mx-auto ">
@@ -70,10 +74,12 @@
   </header>
   <!-- FIN DE BARRA DE NAVEGACIÓN. -->
 
-  <!-- SECCIÓN DE ENCABEZADO DE PORTAFOLIO. -->
-  <section class="boutMe bg-header py-3">
+ <main class="mx-2">
+   <!-- SECCIÓN DE ENCABEZADO DE PORTAFOLIO. -->
+   <section class="boutMe bg-header py-3">
     <div class="container-xxl text-center">
       <div class="row  align-items-center g-2  ">
+       
         <div class=" col-sm-12  col-lg-12 col-xl-12 align-items-center   ">
           <div class="row align-items-center g-2">
             <div class="col-lg-12 col-md-12 col-xl-8 col-xxl-8     ">
@@ -101,9 +107,100 @@
 
 <!-- INICIO DE APARTADO INFO GENERAL -->
   <div class="container py-4 text-center">
-    <div class="row   g-2">
-      <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 g-4">
-        <!-- BIOGRAFÍA -->
+    <div class="row   g-4">
+      <div class="col-sm-12 col-lg-12 col-xl-8 col-xxl-8">
+        <div class="px-2 my-auto text-start">
+          <h6 class="display-6 titleMute">Biografía</h6>
+          <p class="text-small text-start"> He desarrollado <a href="" class="text-link">2 aplicaciones</a> en colaboración internacional
+            para empresas privadas, <a href="" class="text-link">1 proyecto ganador</a> nacional en un hackathon
+            realizado por Microsoft, más de 10
+            proyectos personales para mi <a href="" class="text-link">portafolio en GitHub</a>. Soy una
+            persona que trabaja muy bien bajo presión y tengo habilidades
+            para dirigir un equipo de desarrollo.</p>
+        </div>
+        <div class="container px-auto">
+          <div class="row g-4">
+            <div class="col-sm-12 col-xxl-4">
+              <div class="row dataImp py-4">
+                <span class="col-8 ">Colaboración Internacional</span>
+                <span class="col-4 align-top">2</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xxl-4">
+              <div class="row dataImp py-4">
+                <span class="col-8 ">Proyecto Ganador Hackathon Microsfot</span>
+                <span class="col-4 align-top">1</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xxl-4">
+              <div class="row dataImp py-4">
+                <span class="col-8 ">Proyectos Personales Git</span>
+                <span class="col-4 align-top">+10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+     <!--    <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 col-xl-4 col-xxl-4 g-4">
+              <div class="card mx-2 cardData  p-4 text-start ">
+                <div class="row text-center p-sm-4">
+                  <h6 class="col-6 text-start text-black-50 text-uppercase">Colaboración Internacional</h6>
+                  <p class="fw-bold col-6 text-start text-orange">2 Proyectos</p>
+                </div>
+              </div>
+            </div>
+            <div class=" col-sm-12 col-lg-6 col-xl-4 col-xxl-4 g-4">
+              <div class="card mx-2 cardData  p-4 text-start ">
+                <div class=" text-center">
+                  <p class="fw-bold fs-4 text-orange">1 Proyecto</p>
+                  <h6 class="text-small text-black-50 text-uppercase">Ganador Hackathon by Microsoft</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-4 col-xxl-4 g-4">
+              <div class="card mx-2 cardData  p-4 text-start ">
+                <div class=" text-center">
+                  <p class="fw-bold fs-4 text-orange">+ 10</p>
+                  <h6 class="text-small text-black-50 text-uppercase"> Proyectos Personales en Git</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+       
+      </div>
+      <div class="col-sm-12 col-lg-12 col-xl-4 col-xxl-4">
+        <div class="px-2 my-4 text-start">
+          <h6 class="display-6 titleMute">DATOS DE CONTACTO</h6>
+          <div>
+            <ul class="list-service">
+              <li><i class="fa-regular fa-envelope"></i> Correo Electronico</li>
+              <li><i class="fa   fa-phone "></i> Numero Celular</li>
+              <li><i class="fa-regular fa-user"></i> Extra</li>
+          </ul>
+          </div>
+          <!-- <div class="d-flex flex-column">
+            <a href="" class="text-small text-link"><span class="material-symbols-outlined">
+              mail
+              </span> Email</a>
+          <a href="" class="text-small text-link"><i class="fa fa-phone fs-5"> </i> Número Telefonico</a>
+          <a href="" class="text-small text-link"><i class="fa fa-user-circle fs-5"> </i> Otro</a>
+          </div> -->
+        </div>
+       <!--  <div class="px-2 my-4 text-start">
+          <h6 class="titleMute">SERVICIOS</h6>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Servicio</li>
+            <li class="list-group-item">Servicio</li>
+            <li class="list-group-item">Servicio</li>
+            <li class="list-group-item">Servicio</li>
+            <li class="list-group-item">Servicio</li>
+          </ul>
+        </div> -->
+      </div>
+      <!--<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 g-4">
+         BIOGRAFÍA 
         <div class="px-2 text-start">
           <h6 class="titleMute">Biografía</h6>
           <p class="text-small text-start"> He desarrollado <a href="" class="text-link">2 aplicaciones</a> en colaboración internacional
@@ -112,8 +209,8 @@
             proyectos personales para mi <a href="" class="text-link">portafolio en GitHub</a>. Soy una
             persona que trabaja muy bien bajo presión y tengo habilidades
             para dirigir un equipo de desarrollo.</p>
-        </div>
-        <!-- DATOS DE CONTACTO -->
+        </div>-->
+        <!-- DATOS DE CONTACTO 
         <div class="px-2 text-start">
           <h6 class="titleMute">DATOS DE CONTACTO</h6>
           <div class="d-flex flex-column">
@@ -121,8 +218,8 @@
           <a href="" class="text-small text-link"><i class="fa fa-phone fs-5"> </i> Número Telefonico</a>
           <a href="" class="text-small text-link"><i class="fa fa-user-circle fs-5"> </i> Otro</a>
           </div>
-        </div>
-        <!-- SERVICIOS -->
+        </div>-->
+        <!-- SERVICIOS 
         <div class="px-2 text-start">
           <h6 class="titleMute">SERVICIOS</h6>
           <ul class="list-group list-group-flush">
@@ -133,12 +230,10 @@
             <li class="list-group-item">Servicio</li>
           </ul>
         </div>
-      </div>
-      <!-- CARDS PROYECTOS IMPORTANTES -->
-      <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 g-4  ">
+      </div>-->
+      <!-- <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 g-4  ">
         <div class="row">
           <div class="col-6">
-            <!-- PROYECTOS COLABORACIÓN INTERNACIONAL -->
             <div class="card border-0 my-4 text-start ">
               <div class=" text-center">
                 <p class="fw-bold fs-4 text-orange">2 Proyectos</p>
@@ -147,7 +242,6 @@
             </div>
           </div>
           <div class=" col-6">
-            <!-- PROYECTO GANADOR HACKATHON -->
             <div class="card border-0 my-4 text-start ">
               <div class=" text-center">
                 <p class="fw-bold fs-4 text-orange">1 Proyecto</p>
@@ -158,7 +252,6 @@
         </div>
         <div class="row">
           <div class="col-6">
-            <!-- PROYECTOS PERSONALES GIT -->
             <div class="card border-0 my-4 text-start ">
               <div class=" text-center">
                 <p class="fw-bold fs-4 text-orange">+ 10</p>
@@ -167,13 +260,66 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 <!-- FIN DE APARTADO INFO GENERAL -->
 
   <!-- INICIO DE APARTADO PARA LAS CERTIFICACIONES -->
-  <div class="container py-4 px-3">
+  <div class="container my-4">
+    <div class="row certificaciones" >
+      <div class="col-sm-12 col-lg-12 col-xxl-6 text-xxl-start">
+        <h2 class="display-2 ">Mis Certificaciones</h2>
+      </div>
+      <div class="col-sm-12 col-lg-12 col-xxl-6">
+        <div class="certi_card d-flex flex-column py-4">
+          <div class="certi_title mb-auto">
+            <span class="name_certi ">AÑO XXX</span>
+          </div>
+          <img src="https://thinkcloudly.com/wp-content/uploads/2021/08/Azure.Fundamental_Icon-300x300.png" class=" w-25  my-2" alt="">
+          <div class="certi_title mt-auto">
+            <span class="name_certi">Microsfot Certified</span>
+              <a href=""> <h6 class="h6">Microsoft Azure Fundamental - AZ-900</h6></a>
+          </div>
+        </div>
+        <hr>
+        <div class="certi_card d-flex flex-column py-4 ">
+          <div class="certi_title mb-auto">
+            <span class="name_certi ">AÑO XXX</span>
+          </div>
+          <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png" class=" w-25 my-2" alt="">
+          <div class="certi_title mt-auto">
+            <span class="name_certi ">Certificación Cisco</span>
+            <a href=""><h6 class="h6">CCNA Routing and Switching</h6></a>
+          </div>
+        </div>
+        <hr>
+        <div class="certi_card d-flex flex-column py-4">
+          <div class="certi_title mb-auto">
+            <span class="name_certi">AÑO XXX</span>
+          </div>
+          <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png" class=" w-25  my-2" alt="">
+          <div class="certi_title mt-auto">
+            <span class="name_certi">Certificación Cisco</span>
+           <a href=""> <h6 class="h6">IT Essentials: PC Hardware and Software</h6></a>
+          </div>
+        </div>
+        <hr>
+        <div class="certi_card d-flex flex-column py-4">
+           <div class="certi_title mb-auto">
+            <span class="name_certi ">AÑO XXX</span>
+          </div>
+          <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png" class=" w-25  my-2" alt="">
+          <div class="certi_title mt-auto">
+            <span class="name_certi">Certificación Cisco</span>
+            <a href=""> <h6 class="h6">IT Essentials: PC Hardware and Software</h6></a>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container py-4 px-3">
     <div class="row align-items-start g-2 ">
       <div class="col-sm-12 col-xl-6  row-cols-xxl-6  ">
         <h4 class="display-4 title4 align-text-top ">Mis Certificaciones</h4>
@@ -297,7 +443,7 @@
     </div>
     
     
-  </div>
+  </div> -->
   <!-- FIM DE APARTADO PARA LAS CERTIFICACIONES -->
 
 
@@ -841,6 +987,7 @@
       </section>
     </div>
   </div>
+ </main>
 
   <!-- INICIO APARTADO DE FOOTER -->
   <footer class="footer mt-auto py-5  ">
