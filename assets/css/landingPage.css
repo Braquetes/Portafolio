@@ -55,7 +55,8 @@
 }
 .latname{
   text-transform: uppercase;
-  font-size: 1.8em;
+  font-weight: 500;
+  font-size: 1.4em;
   font-family: 'Poppins', sans-serif;
 }
  .titleMute{
@@ -78,9 +79,9 @@
 .title4{
   color: var(--green-primary2);
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 .iconCert{
   color: var(--color-logo-gitlab);
@@ -92,6 +93,11 @@ a{
 .sectionCert .title5:hover{
   text-decoration: underline 1px var(--orange-color);
   color: var(--color-logo-gitlab);
+}
+/* TITULO CERTIFICACION */
+.title-Certi{
+  color: var(--green-primary);
+  font-weight: 600;
 }
 .text-orange{
   color: var(--green-color-hover-link)
@@ -111,7 +117,7 @@ a{
   padding: 10px;
   height: 2.5rem;
   line-height: 1;
-  margin: 21px;
+  margin: .5rem;
   border: solid 1px var(--green-primary);
   border-radius: 50% ;
   color: var(--green-primary);
@@ -143,7 +149,7 @@ a{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.4rem 2.8rem;
+  padding: 1rem 1.5rem;
   white-space: nowrap;
   font-size: 1.125rem;
   line-height: 1;
@@ -303,8 +309,8 @@ a{
   align-items: center;
   justify-content: center;
   border: none;
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   text-transform: uppercase;
   color: var(--grey-color-text);
   border-radius: 5px;
@@ -332,6 +338,168 @@ a{
   color: var(--color-logo-github);
   background-color: #2f92f03d ;
 }
+/* ESTILOS CARD-PROJECT */
+figure{
+  position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: auto;
+	width: 48%;
+	background: var(--green-dark2);
+	text-align: center;
+	cursor: pointer;
+}
+figure img{
+  position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+figure figcaption{
+  padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: visible;
+	backface-visibility: hidden;
+}
+figure figcaption::before,
+figure figcaption::after{
+  pointer-events: none;
+}
+figure figcaption,
+figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+ figure h6 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+figure h6 span {
+	font-weight: 800;
+}
+
+ figure h6,
+ figure p {
+	margin: 0;
+}
+
+figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-zoe figcaption {
+	top: auto;
+	bottom: 0em;
+	padding: 1em;
+	height: 80px;
+	background: var(--gren-light);
+	color: #3c4a50;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+figure.effect-zoe h6 {
+	float: left;
+}
+
+figure.effect-zoe p.icon-links a {
+	color: #3c4a50;
+  font-weight: 700;
+	font-size: 1.4em;
+  padding:  1.5rem;
+}
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+	color: var(--color-logo-gitlab);
+}
+
+figure.effect-zoe p.description {
+	position: relative;
+	bottom: 8em;
+	padding: 2em;
+	color: #fff;
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+}
+
+figure.effect-zoe h6,
+figure.effect-zoe p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+
+figure.effect-zoe p.icon-links a i::before {
+	display: inline-flex;
+	padding: 8px 10px;
+	/* font-family: 'feathericons';
+	speak: none; */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+figure.effect-zoe h6 {
+	display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+	opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h6,
+figure.effect-zoe:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h6 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
 /* ESTILOS FOOTER */
 footer{
   background-color: var(--green-bg1-btn);
