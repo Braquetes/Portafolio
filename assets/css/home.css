@@ -1,0 +1,195 @@
+/* ESTILOS GENERALES */
+:root{
+    /* Paleta de Verdes */
+      --green-primary:#416D50;
+      --green-secondary: #76B536;
+      --gren-light: #E9F3ED;
+      --green-dark: #00210B;
+      /* PALETA DE COLORES 2OP */
+      --green-primary2:#2D8D79;
+      --green-secondary2: #8FC79A;
+      --green-dark2: #5E9387;
+      --green-light2: #CEE9B6;
+      /* PALETA DE COLORES ARCADIA */
+      --green-blue-arcadia: #A7F2E4;
+      --green-color-text:#01261C;
+      --green-color-hover-link: #4ABF2A;
+      --green-lemon-arcadia: #98D936;
+      --green-coffe-light-arcadia: #F2ECE4;
+      /* PALETA COLORES COMPLEMENTARIOS */
+      --green-color-primary: #D5F5CC;
+      --green-bg1-btn: #004036;
+      --green-bg2-btn: #11FF84;
+      /* PALETA DE GRISES */
+      --grey-border-btnsocial: #e9ecef;
+      --grey-color-btnsocial: #666;
+      --grey-color-text: #999999;
+      --grey-text-muted: #acacac;
+      --white-color: #FFFFFF;
+      --black-color: #000000;
+      /* COLORES ICONOS REDES */
+      --orange-color: #fa4529;
+      --color-logo-twwitter: #1DA1F2;
+      --color-logo-face:#4867AA;
+      --color-logo-ig: #F70182;
+      --color-logo-github: #000;
+      --color-logo-gitlab: #DB4128;
+      
+  }
+  .bg-header{
+    background-color: var(--gren-light);
+  }
+  /*  */
+  *{
+    font-family: 'Rubik', sans-serif;
+
+  }
+  /* ESTILOS LINKS NAVBAR */
+.navbar{
+    text-transform: uppercase;
+}
+.navbar-brand{
+    color: var(--gren-light);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.navbar-brand:hover{
+  cursor: pointer;
+  color: var(--gren-light);
+}
+.bg-navbar{
+    background-color: var(--green-primary);
+}
+.navbar-toggler{
+    font-weight: 400;
+    border: none;
+    background-color: var(--green-bg1-btn);
+    color: var(--white-color);
+}
+.navbar-toggler:active{
+  border: none;
+  outline: none;
+}
+.btn-close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    margin:0.25em;
+    padding: 0.25em 0.25em;
+    color: var(--gren-light);
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.15rem;
+    opacity: 0.5;
+  }
+  .btn-close:hover {
+    color: var(--gren-light);
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  .btn-close:focus {
+    outline: 0;
+    opacity: 1;
+  }
+  .btn-close:disabled, .btn-close.disabled {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    opacity: 0.25;
+  }
+  
+
+ /* .navbar-toggler {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+   .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%255, 255,255,025%' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4  15h22M4 /%3e%3c/svg%3e");
+  } */
+   .navbar-text {
+    color: white;
+}
+   .navbar-text a,
+
+  .navbar-text a:hover,
+
+.navbar-text a:focus {
+    background-color: var(--green-color-text);
+    color: rgb(255, 255, 255);
+  }
+  
+.nav-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--gren-light);
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 1.075rem;
+    line-height: 1;
+    text-underline-offset: 10px;
+    margin: .5rem 2rem;
+    padding: 1.2rem .8rem;
+}
+.nav-link:hover, .nav-link:focus{
+    color: var(--gren-light);
+    text-decoration: underline  3px var(--green-color-hover-link);
+}
+.nav-link:focus + .nav-link, .nav-link:focus{
+    color: var(--green-color-hover-link);
+}
+.nav-link:active{
+    color: var(--green-color-hover-link);
+}
+.dataHeader{
+    text-align: left;
+
+}
+.dataHeader .carreer{
+    font-weight: 600;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+.dataHeader h1 span{
+    font-weight: 600;
+}
+.container h6{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: .9rem;
+    font-weight: 700;line-height: 2;
+    letter-spacing: 2px;
+    color: var(--green-primary2);
+}
+/* Lista Servicios */
+ul {
+    width: 100%;
+    text-align: left;
+    padding:  0rem;
+    list-style: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin:  0;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: .2px inset var(--grey-text-muted);
+
+}
+ul li{
+    margin: 2rem 0;
+    color: var(--grey-color-text);
+
+}
+ul li i{
+    color: var(--grey-text-muted);
+    padding: .5rem ;
+    margin-right: 20px;
+    border-right: .6px solid var(--grey-text-muted);
+}
+ul  li:hover i {
+    margin-left: 20px;
+    color: var(--green-primary2);
+}
