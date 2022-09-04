@@ -128,6 +128,30 @@
     font-weight: 500;
     font-size: .9rem;
 }
+/* TEXT STATS */
+figure i{
+    font-size: 8rem;
+    color: var(--grey-text-muted);
+}
+figure i:hover{
+    color: #3AC283;
+}
+
+figure figcaption p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #3AC283;
+}
+figure figcaption span{
+    color: var(--white-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-weight: 200;
+}
  .btn_gral{
     text-decoration: none;
     font-size: 1rem;
