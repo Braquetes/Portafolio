@@ -25,7 +25,9 @@
       --grey-color-btnsocial: #666;
       --grey-color-text: #999999;
       --grey-text-muted: #acacac;
-      --white-color: #f8f8f8;
+      --grey-light: #f9f9f9;
+      --white-color: #ffffff;
+      --grey-dark: #363636;
       --black-color: #000000;
       /* COLORES ICONOS REDES */
       --orange-color: #fa4529;
@@ -37,6 +39,7 @@
       
   }
 *{
+    overflow: -moz-hidden-unscrollable;
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
@@ -48,7 +51,13 @@
     background-size: cover;
 }
 .bg-w{
-    background-color: var(--white-color);
+    background-color: var(--grey-light);
+}
+.bg-footer{
+    background-color:3AC9283;
+}
+.bg-greyDark{
+background-color: var(--grey-dark);
 }
 .header_welcome h3{
     color: var(--white-color);
@@ -98,11 +107,14 @@
     font-weight: 500;
     line-height: 1.2;
 }
-.biografia p{
+.biografia ul li a{
     font-size: 1rem;
     font-weight: 200;
     line-height: 1.5;
-    color: var(--green-color-text);
+    color: var(--grey-light);
+}
+.biografia ul li:hover{
+    color: #3AC283;
 }
 .bio_stats{
     border-top: solid 4px var(--green-primary2);
@@ -151,6 +163,28 @@ figure figcaption span{
     text-transform: uppercase;
     line-height: 1.5;
     font-weight: 200;
+}
+/* TEXT PROYECTOS */
+.detail-work .col-2{
+    font-size: .8rem;
+    color: var(--grey-light);
+}
+.detail-work .col-10 p{
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: var(--grey-light);
+}
+.detail-work .col-10 h5{
+    text-transform: capitalize;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--grey-light);
+}
+.detail-work .col-10 a{
+    text-transform: uppercase;
+    font-weight: 400;
+   /*  color: #60BCB2; */
+   color: #0ef80e;
 }
  .btn_gral{
     text-decoration: none;
@@ -206,13 +240,14 @@ figure figcaption span{
     display: inline-block;
     line-height: 1;
     border-radius: 50%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--green-color-text);
-    border: solid 1px var(--grey-border-btnsocial);
+    border:solid transparent 1px ;
 }
 .btn_social:hover{
-    background-color: var(--green-color-text);
-    color: white;
+    border: solid 1px var(--grey-border-btnsocial);
+
+    color: var(--green-primary2);
 }
 /* NAVBAR */
 .rb_brand{
