@@ -98,13 +98,18 @@ background-color: var(--grey-dark);
     font-weight: 400;
     font-size: .8rem;
 }
-.biografia h4{
+.modal-title, .biografia h4{
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 5px;
-    color: var(--grey-color-text);
+    color: #3AC283;
     font-weight: 500;
     line-height: 1.2;
+}
+.langDev>p{
+    font-weight: bold;
+    font-size: .8rem;
+    text-transform: uppercase;
 }
 .biografia ul li a{
     font-size: 1rem;
@@ -173,52 +178,56 @@ figure figcaption span{
     font-size: .8rem;
     color: var(--grey-light);
 }
-.detail-work .col-10>h5{
+ .detail-work .col-10>h5{
     text-transform: capitalize;
     font-weight: 200;
     font-size: 1.5rem;
     color: var(--grey-light);
 }
-.detail-work .col-10 a{
+.detail-work .col-10>a{
     text-transform: uppercase;
     font-weight: 400;
    /*  color: #60BCB2; */
    color: #0ef80e;
 }
+/* ESTILOS MODAL DETALLE DE PROYECTO */
+
  .btn_gral{
     text-decoration: none;
     font-size: 1rem;
     padding: 1rem 1.5rem;
-    border: 1px transparent;
+    border: 1px solid transparent;
     border-radius: .3rem;
     align-items: center;
     justify-content: center;
     margin: 0 1rem 1rem 0;
     line-height: 1.5;
     vertical-align: middle;
-    user-select: none;
     display: inline-block;
     font-weight: 600;
+    color: var(--grey-dark);
 }
 .btn_primary{
-    border: solid var(--green-bg2-btn)  ;
-    background-color: var(--green-bg2-btn);
-    color: var(--green-color-text);
-}
-.btn_primary:hover{
-    color: var(--white-color);
     background-color: #0dca68;
     border: solid transparent;
 }
+.btn_primary:hover{
+    color: var(--grey-light);
+    background-color: #09914b;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
 .btn_secondary{
-    background-color: var(--green-color-text);
-    border:  solid var(--white-color);
-    color: var(--white-color);
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
+    outline: solid 1px var(--black-color);
+  
     
 }
 .btn_secondary:hover{
-    color: var(--green-bg2-btn);
-    border: solid var(--green-bg2-btn);
+    color: var(--gren-light);
+    background-color: var(--grey-dark);
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+
 }
 .btn_link{
     color: var(--green-color-text);
