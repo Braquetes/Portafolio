@@ -217,8 +217,8 @@ figure figcaption span{
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 .btn_secondary{
-    background-color: var(--grey-light);
-    color: var(--grey-dark);
+    background-color: var(--grey-dark);
+    color: var(--grey-light);
     outline: solid 1px var(--black-color);
   
     
