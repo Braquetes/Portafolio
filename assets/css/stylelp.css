@@ -167,7 +167,7 @@ figure figcaption p{
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #3AC283;
+    color: var(--color-green-primary);
 }
 figure figcaption span{
     color: var(--white-color);

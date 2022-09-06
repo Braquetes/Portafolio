@@ -71,10 +71,11 @@
     </nav>
     
     <!-- CONTENIDO PRINCIPAL -->
-    <div class="px-3 bg-w">
+    <div class="container-fluid bg-w px-4 ">
         <!-- CONTENEDOR PARA EL HEADER DE HOME -->
         <div class="container d-flex h-90 w-100   my-auto ">
             <div class="row   ">
+                <!-- COLUMNA RESPONSIVE: Datos Developer -->
                 <div class="col-sm-12 col-xl-8 col-xxl-8 py-4 my-auto">
                     <div class="d-flex flex-column g-4 info_header ">
                         <h6 class="display-6 mb-auto">Lopéz Edgar</h6>
@@ -82,6 +83,7 @@
                         <p>Desarrollador de Software Multiplataforma / <br>
                             <span>Software Development.</span>
                         </p>
+                        <!-- ICONS LINKS CONTACT -->
                         <div class="d-flex d-md-inline-block my-auto px-auto">
                             <a href="" class=" btn_social "> <i class="fa-brands fa-gitlab"></i> </a>
                             <a href="" class=" btn_social "> <i class="fa-brands fa-github"></i> </a>
@@ -91,6 +93,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- COLUMNA RESPONSIVE: Foto Developer -->
                 <div class="col-sm-12 col-xl-4 col-xxl-4 my-4">
                     <img src="/assets/img/3915d122-0b6f-4b36-95b7-4130c6e2ca5e.webp" class="img-fluid" width="500"
                         alt="">
@@ -151,49 +154,44 @@
             </div>
         </div>
     </main>
-    <!-- ESTADISTICAS PERFIL -->
-    <div class=" d-flex text-center  bg-welcome mx-auto ">
-        <div class="container-fluid w-100 h-auto bg-dark bg-opacity-50  flex-column ">
-            <div class="row g-4   ">
-                <div class="col-sm-12 col-xl-4 col-xxl-4 py-4 g-4 ">
-                    <figure class="figure text-center  py-2">
-                        <figcaption class="figure-caption my-2 px-4">
-                            <div class="">
-                                <i class="fa fa-thin fa-earth-america my-2"></i>
-                            </div>
-                            <p class=" " >2 aplicaciones</p>
-                            <span class=" ">Desarrolladas para empresas privadas a nivel internacional</span>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-4 py-4 g-4">
-                    <figure class="figure text-center  py-2">
-                        <figcaption class="figure-caption my-2 px-4">
-                            <div class="">
-                                <i class="fa fa-thin fa-ranking-star my-2"></i>
-                            </div>
-                            <p class="" >Proyecto Ganador</p>
-                            <span class=" ">Desarrolladas para empresas privadas a nivel internacional</span>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-12 col-xl-4 col-xxl-4 py-4 g-4 ">
-                    <figure class="figure text-center py-2">
-                        <figcaption class="figure-caption my-2 px-4">
-                            <div class="">
-                                <i class="fa fa-thin fa-briefcase my-2"></i>
-                            </div>
-                            <p class="  " >+10</p>
-                            <span class="">Proyectos personales en repositorio  de GitHub</span>
-                            
-                        </figcaption>
-                    </figure>
-                </div>
+
+    <!-- CONTENEDOR PARA DATOS IMPORTANTES DEVELOPER -->
+    <div class="container-fluid bg-welcome my-2">
+        <div class="row align-items-center text-center" >
+            <!-- COLUMNA GANADOR HACKATHON -->
+            <div class="col-sm-4 col-4 my-auto ">
+                <figure class="figure text-center  my-4">
+                    <img class="img-fluid figure-img" src="https://images.credly.com/images/88b89a59-29bf-4c8a-b180-75e22c1ec1d9/Hack-credly-badges-600px-challange.png" alt="" width="180">
+                    <figcaption class="figure-caption  px-4">
+                    <p class=" " >Proyecto DÄZABI </p>
+                    <span class=" ">Proyecto Ganador Hackathon "Hack The Ocean"</span>
+                </figcaption>
+                </figure>
             </div>
-        </div>
+            <!-- COLUMNA PROYECTOS INTERNACIONALES -->
+            <div class="col-sm-4 col-4  my-auto ">
+                <figure class="figure text-center  my-4">
+                    <img class="img-fluid figure-img" src="https://cdni.iconscout.com/illustration/premium/thumb/international-business-partnership-5469817-4589400.png" alt="" width="180">
+                    <figcaption class="figure-caption  px-4">
+                        <p class=" " >PROYECTOS INTERNACIONALES </p>
+                        <span class=" ">2 proyectos desarrollados en colaboración con empresas internacionales</span>
+                    </figcaption>
+                    </figure>
+            </div>
+            <!-- COLUMNA PROYECTOS GITHUB -->
+            <div class="col-sm-4 col-4  my-auto ">
+                <figure class="figure text-center  my-4">
+                    <img class="img-fluid figure-img" src="https://cdn.worldvectorlogo.com/logos/github-icon.svg" alt="" width="180">
+                    <figcaption class="figure-caption  px-4">
+                        <p class=" " >Proyectos Personales </p>
+                        <span class=" ">+ 10 Proyectos en mi Repositorio de GitHub</span>
+                    </figcaption>
+                    </figure>
+            </div>
+          </div>
+        
     </div>
+<!-- FIN CONTENEDOR PARA DATOS IMPORTANTES DEVELOPER -->
 
     <!-- CONTENEDOR PARA LAS CERTIFICACIONES -->
     <div class="container-fluid bg-light my-4 ">
@@ -287,7 +285,7 @@
     </div>
     <!-- FIN DE CONTENEDOR DE CERTIFICACIONES -->
 
-    
+
     <!-- CONTENEDOR PARA SERVICIOS -->
    <div class="container my-4 py-4 d-flex  flex-column">
     <div class="row">
