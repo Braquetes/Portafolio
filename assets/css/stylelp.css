@@ -327,3 +327,28 @@ figure figcaption span{
     color: var(--color-logo-github);
     background-color: #2f92f03d ;
   }
+  /* ESTILOS ACORDEÓN SERVICIOS */
+  .accordion-header > button{
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    border: none;
+    color: var(--grey-dark);
+    outline: none;
+  }
+  .accordion-header > button:current{
+    background-color: RED;
+  }
+  .accordion-header >   .accordion-button:hover, .accordion-button:focus + .accordion-button:active{
+    color: var(--color-green-primary);
+    outline: none;
+    border: none;
+    background-color: var(--green-primary3);
+    color: var(--grey-dark);
+  }
+
+  .accordion-body,  p{
+    font-weight: 400;
+    font-size: .9rem;
+    padding:  .5rem 0;
+  }
