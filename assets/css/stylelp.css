@@ -1,5 +1,7 @@
 
 :root{
+    /* COLOR PALETTE FINAL */
+    --color-green-primary: #0dca68;
     /* Paleta de Verdes */
       --green-primary:#416D50;
       --green-secondary: #76B536;
@@ -10,6 +12,10 @@
       --green-secondary2: #8FC79A;
       --green-dark2: #5E9387;
       --green-light2: #CEE9B6;
+      /* PALETA DE COLORES 2RA OPCIÓN */
+      --green-primary3: #63cc95;
+      --green-secondary3: #b4f1b2;
+      --green-dark3: #0d131c;
       /* PALETA DE COLORES ARCADIA */
       --green-blue-arcadia: #A7F2E4;
       --green-color-text:#212121;
@@ -39,7 +45,8 @@
       
   }
 *{
-    font-family: 'Rubik', sans-serif;
+   /* SEGUNDA OPCIÓN FONT font-family: 'General Sans', sans-serif;*/
+    font-family: 'Rubik', sans-serif; 
     margin: 0;
     padding: 0;
 } 
@@ -145,6 +152,7 @@ background-color: var(--grey-dark);
     font-size: .9rem;
 }
 /* TEXT STATS */
+
 figure i{
     font-size: 8rem;
     color: var(--grey-text-muted);
@@ -193,10 +201,12 @@ figure figcaption span{
 /* ESTILOS MODAL DETALLE DE PROYECTO */
 
  .btn_gral{
+    text-transform: uppercase;
     text-decoration: none;
     font-size: 1rem;
     padding: 1rem 1.5rem;
-    border: 1px solid transparent;
+    letter-spacing: 1px;
+    border:  solid transparent;
     border-radius: .3rem;
     align-items: center;
     justify-content: center;
@@ -205,15 +215,16 @@ figure figcaption span{
     vertical-align: middle;
     display: inline-block;
     font-weight: 600;
-    color: var(--grey-dark);
 }
 .btn_primary{
-    background-color: #0dca68;
+    background-color: var(--green-primary3);
+    color: var(--grey-dark);
     border: solid transparent;
 }
-.btn_primary:hover{
+ .btn_primary:hover{
     color: var(--grey-light);
-    background-color: #09914b;
+    background-color: var(--color-green-primary);
+    /* background-color: #09914b; */
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 .btn_secondary{
@@ -224,8 +235,8 @@ figure figcaption span{
     
 }
 .btn_secondary:hover{
-    color: var(--gren-light);
-    background-color: var(--grey-dark);
+    color: var(--green-primary3);
+    background-color: var(--green-dark3);
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 
 }

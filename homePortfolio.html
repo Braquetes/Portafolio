@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- LINK 2ND OPTION FONT -->
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@200,500,300,600,400,700&display=swap" rel="stylesheet">
     <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -67,6 +69,7 @@
             </div>
         </div>
     </nav>
+    
     <!-- CONTENIDO PRINCIPAL -->
     <div class="px-3 bg-w">
         <!-- CONTENEDOR PARA EL HEADER DE HOME -->
@@ -191,141 +194,100 @@
             </div>
         </div>
     </div>
+
     <!-- CONTENEDOR PARA LAS CERTIFICACIONES -->
     <div class="container-fluid bg-light my-4 ">
         <div class="container">
             <div class="row certificaciones py-4">
+                <!-- COLUMA RESPONSIVE: Titulo Certificaciones -->
                 <div class="col-sm-12 col-lg-12 col-xxl-6 text-xxl-start">
                     <h2 class="display-2">Mis Certificaciones</h2>
                 </div>
+                <!-- COLUMNA RESPONSIVE - Listado de Certificaciones -->
                 <div class="col-sm-12 col-lg-12 col-xxl-6">
-                    <div class="certi_card d-flex flex-column py-4">
-                        <img src="https://thinkcloudly.com/wp-content/uploads/2021/08/Azure.Fundamental_Icon-300x300.png"
-                            class=" w-25  my-2" alt="">
-                        <div class=" certi_title mt-auto">
-                            <div class="certi_title mb-auto row ">
-                                <h6 class="name_certi col-6 ">AÑO XXX</h6>
-                                <h6 class="name_certi col-6 align-content-end ">Microsfot Certified</h6>
-                            </div>
-                            <!-- <h6 class="name_certi">Microsfot Certified</h6> -->
-                            <a href="" class="btn_link"> Microsoft Azure Fundamental - AZ-900</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="certi_card d-flex flex-xl-fill py-4 ">
-                        <div class="  w-25 px-auto  certi_title ">
-                            <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
-                            class="img-fluid " alt="" width="64">
-                           
-                        </div>
-                        
-                        <div class="  w-75 certi_title px-4 align-start">
-                            
-                            <h6 class="name_certi "> <span class="name_certi ">AÑO XXX</span> <br> Certificación Cisco</h6>
-                            <!-- <a href="" class="btn_link">CCNA Routing and Switching</a> -->
-                        </div>
-                       
-                        
-                    </div>
-                    <div class="w-100 py-0 my-0 certi_title text-center">
-                        <a href="" class="btn_link ">CCNA Routing and Switching</a>
-                    </div>
-                    <hr>
-                    <!-- <div class="certi_card d-flex flex-fill py-4">
-                            <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
-                            class="   my-auto" alt="" width="64">
-                        
-                        <div class="col-sm-8 certi_title px-2 ">
-                            <span class="name_certi">AÑO XXX</span>
-                            <h6 class="name_certi">Certificación CISCO</h6>
-                            <small class="text-right"><a href="" class="btn_link "> IT Essentials: PC Hardware and Software</a></small>
-                        </div>
-                    </div> -->
-                    <div class="certi_card d-flex flex-fill py-4 ">
-                        <div class="w-25 text-center mx-auto">
-                            <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
-                            class="img-fluid   my-auto" alt="" width="124" >
-                        </div>
-                        <div class="w-75 px-4">
-                            <div class="d-flex flex-fill ">
-                                <span class="name_certi">AÑO XXX</span>
-                                <h6 class="name_certi ps-5 ms-sm-5">Certificación CISCO</h6>
-                            </div>
-                            <a href="" class="btn_link "> IT Essentials: PC Hardware and Software</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="certi_card d-flex flex-fill py-4 ">
-                        <div class="w-100">
-                            <div class="w-25 text-center mx-auto">
-                                <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
-                                class="img-fluid   my-auto" alt="" width="124" >
-                            </div>
-                            <div class="w-75 px-4">
-                                <div class="d-flex flex-fill ">
-                                    <span class="name_certi">AÑO XXX</span>
-                                    <h6 class="name_certi ps-5 ms-sm-5">Certificación CISCO</h6>
+                    <!-- Card para Certificación Microsoft -->
+                    <div class="certi_card d-flex flex-fill py-4">
+                        <div class="px-auto mb-3" >
+                            <div class="row g-0">
+                              <div class="col-4 my-auto p-xxl-4">
+                                <img src="https://thinkcloudly.com/wp-content/uploads/2021/08/Azure.Fundamental_Icon-300x300.png"
+                                class=" img-fluid img-thumbnail bg-transparent border-0" alt="">
+                              </div>
+                              <div class="col-8 my-auto">
+                                <div class="card-body px-3">
+                                    <span class="name_certi ">AÑO XXX</span>
+                                    <h6 class="name_certi">Microsoft Ceritified</h6>
+                                    <a href="" class="btn_link"> Azure Fundamentals</a>
                                 </div>
+                              </div>
                             </div>
-                            <div class="w-100">
-                                
+                          </div>
+                    </div>
+                    <hr>
+                    <!-- CARD PARA CERTIFICACIÓN CISCO IT ESSENTIALS-->
+                    <div class="certi_card d-flex flex-fill py-4">
+                        <div class="px-auto mb-3" >
+                            <div class="row g-0">
+                              <div class="col-4 my-auto p-xxl-4">
+                                <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
+                                class=" img-fluid img-thumbnail bg-transparent border-0" alt="">
+                              </div>
+                              <div class="col-8 my-auto">
+                                <div class="card-body px-3">
+                                    <span class="name_certi ">AÑO XXX</span>
+                                    <h6 class="name_certi">Certificación A+ de CompTIA</h6>
+                                    <a href="" class="btn_link"> IT Essentials - Cisco Networking Academy</a>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- CERT  -->
-                    <hr>
-                    <div class="certi_card d-flex flex-column py-4">
-                        <div class="certi_title mb-auto">
-                            <span class="name_certi">AÑO XXX</span>
-                        </div>
-                        <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
-                            class=" w-25  my-2" alt="">
-                        <div class="certi_title mt-auto ">
-                            <h6 class="name_certi">Certificación CISCO</h6>
-                            <a href="" class="btn_link"> CCNA Routing and Switching</a>
-                        </div>
+                          </div>
                     </div>
                     <hr>
-                    <div class="certi_card d-flex flex-column py-4">
-                        <div class="certi_title mb-auto">
-                            <span class="name_certi">AÑO XXX</span>
-                        </div>
-                        <img src="https://thinkcloudly.com/wp-content/uploads/2021/08/Azure.Fundamental_Icon-300x300.png"
-                            class=" w-25  my-2" alt="">
-                        <div class="certi_title mt-auto ">
-                            <h6 class="name_certi">CMicrosoft Certified</h6>
-                            <a href="" class="btn_link"> Microsoft Azure Fundamental - AZ-900 </a>
-                        </div>
+                    <!-- CARD PARA CERTIFICACIÓN CISXCO CCNA -->
+                    <div class="certi_card d-flex flex-fill py-4">
+                        <div class="px-auto mb-3" >
+                            <div class="row g-0">
+                              <div class="col-4 my-auto p-xxl-4">
+                                <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
+                                class=" img-fluid img-thumbnail bg-transparent border-0" alt="">
+                              </div>
+                              <div class="col-8 my-auto">
+                                <div class="card-body px-3">
+                                    <span class="name_certi ">AÑO XXX</span>
+                                    <h6 class="name_certi">CCNA Certification</h6>
+                                    <a href="" class="btn_link"> Routing and Switching</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <hr>
-                    <div class="certi_card d-flex flex-column py-4">
-                        <div class="certi_title mb-auto">
-                            <span class="name_certi">AÑO XXX</span>
-                        </div>
-                        <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
-                            class=" w-25  my-2" alt="">
-                        <div class="certi_title mt-auto ">
-                            <h6 class="name_certi">Certificación CISCO</h6>
-                            <a href="" class="btn_link"> IT Essentials: PC Hardware and Software</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="certi_card d-flex flex-column py-4">
-                        <div class="certi_title mb-auto">
-                            <span class="name_certi ">AÑO XXX</span>
-                        </div>
-                        <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
-                            class=" w-25  my-2" alt="">
-                        <div class="certi_title mt-auto">
-                            <h6 class="name_certi">Certificación Cisco</h6>
-                            <a href="" class="btn_link"> IT Essentials: PC Hardware and Software</a>
-                        </div>
+                    <!-- CARD PARA CERTIFICACIÓN EXTRA -->
+                    <div class="certi_card d-flex flex-fill py-4">
+                        <div class="px-auto mb-3" >
+                            <div class="row g-0">
+                              <div class="col-4 my-auto p-xxl-4">
+                                <img src="http://redesteleco.com/wp-content/uploads/2019/03/cisco_logo-1-1024x540.png"
+                                class=" img-fluid img-thumbnail bg-transparent border-0" alt="">
+                              </div>
+                              <div class="col-8 my-auto">
+                                <div class="card-body px-3">
+                                    <span class="name_certi ">AÑO XXX</span>
+                                    <h6 class="name_certi">Type Certification</h6>
+                                    <a href="" class="btn_link"> Name Certification</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <hr>
                 </div>
             </div>
         </div>
     </div>
+    <!-- FIN DE CONTENEDOR DE CERTIFICACIONES -->
+
+    
     <!-- CONTENEDOR PARA SERVICIOS -->
    <div class="container my-4 py-4 d-flex  flex-column">
     <div class="row">
